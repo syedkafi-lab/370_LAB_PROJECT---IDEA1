@@ -1,0 +1,7 @@
+370-LAB_PROJECT : Smart Career and Internship Management System:
+
+SmartMatch aims to automate and personalize the career placement process through a data-driven and interactive approach. It functions as both a career management hub and a networking system, integrating three key dimensions :
+
+I. Smart Resume Database → A searchable database that stores and indexes all student resumes, extracts key skills and experience data, and enables recruiters to find suitable candidates efficiently.
+II. Skill-Based Job Matching → An intelligent matching engine compares student skills, CGPA, and academic details with job requirements, generating ranked “Top Matches” for each positions.
+III. Interactive Networking Platform → A mutual interest system (inspired by Bumble) allows students and recruiters to connect through two-way interest acknowledgments. Once both express interest, the system creates a connection channel for real-time chat and collaboration.
