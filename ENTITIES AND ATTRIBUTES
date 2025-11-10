@@ -1,0 +1,169 @@
+ENTITIES AND ATTRIBUTES :
+
+1. Student ---
+Represents each registered student user on the platform.
+->Attributes:
+student_id (PK)
+name
+emai
+password_hash
+department
+cgpa
+graduation_year
+bio
+profile_photo
+resume_id (FK, optional)
+created_at
+updated_at
+
+2. Resume ---
+Stores resume details and upload paths for students.
+->Attributes:
+resume_id (PK)
+student_id (FK)
+summary
+experience_years
+linkedin_link
+file_path
+uploaded_at
+
+3. Skill ---
+Contains a master list of all skills (technical and soft).
+->Attributes:
+skill_id (PK)
+skill_name
+
+4. StudentSkill ---
+Many-to-many relation between students and skills.
+->Attributes:
+student_id (FK)
+skill_id (FK)
+proficiency_level (optional: Beginner / Intermediate / Expert)
+
+5. Project ---
+Represents academic or personal projects added by students.
+->Attributes:
+project_id (PK)
+student_id (FK)\
+title
+tech_stack
+description
+project_link (optional)
+
+ 6. Company ---
+Stores organization or employer data.
+->Attributes:
+company_id (PK)
+name
+industry
+location
+description
+website
+contact_email
+created_at
+
+7. Recruiter ---
+Represents recruiters who post jobs/internships on behalf of companies.
+->Attributes:
+recruiter_id (PK)
+company_id (FK)
+name
+email
+password_hash
+designation
+profile_photo
+joined_at
+
+8. JobPosition ---
+Represents job/internship listings created by recruiters.
+->Attributes:
+job_id (PK)
+company_id (FK)
+recruiter_id (FK)
+title
+type (Internship / Part-time / Full-time)
+description
+required_cgpa
+salary_range
+location
+posted_at
+status (Open / Closed)
+
+9. JobSkill ---
+Many-to-many link between JobPosition and Skill.
+->Attributes:
+job_id (FK)
+skill_id (FK)
+
+10. Application ---
+Tracks which student applied to which job, along with status.
+->Attributes:
+app_id (PK)
+student_id (FK)
+job_id (FK)
+status (Applied / Under Review / Shortlisted / Rejected / Hired)
+apply_date
+reviewed_date
+
+11. Connection ---
+Handles mutual interest (Bumble-style match) between students and recruiters.Connection is “active” only if both sides show interest.
+->Attributes:
+connection_id (PK)
+student_id (FK)
+recruiter_id (FK)
+student_interest (boolean)
+recruiter_interest (boolean)
+connection_status (Pending / Matched / Rejected)
+created_at
+
+12. Message ---
+Stores chat messages exchanged after a mutual connection.
+->Attributes:
+message_id (PK)
+connection_id (FK)
+sender_type (Student / Recruiter)
+sender_id (FK)
+content
+sent_at
+read_status
+
+13. RecruiterReview ---
+Recruiter ratings and feedback for resumes or applications.
+->Attributes:
+review_id (PK)
+recruiter_id (FK)
+resume_id (FK)
+rating (1–5)
+feedback
+shortlisted (boolean)
+reviewed_at
+
+14. Admin ---
+System administrator for management and moderation.
+->Attributes:
+admin_id (PK)
+username
+password_hash
+email
+role (SuperAdmin / Moderator)
+created_at
+
+15. Notification ---
+Handles alerts for important events (match, new job, status updates).
+->Attributes:
+notification_id (PK)
+user_type (Student / Recruiter)
+user_id (FK)
+message
+link (optional: redirect path)
+is_read (boolean)
+Created_at
+
+16. AnalyticsLog (optional but useful) ---
+Stores system logs or metrics for dashboards.
+->Attributes:
+log_id (PK)
+user_id (FK)
+user_type
+action (e.g., Login, Applied, MessageSent, Rated)
+timestamp
