@@ -1,0 +1,52 @@
+Key Features 
+
+🔹 1. Smart User Profiles
+*Students can create detailed career profiles with academic info, skills, projects, certifications, and uploaded resumes.
+* Recruiters can build company profiles and define job or internship requirements.
+* Dynamic dashboards display real-time profile completeness, pending applications, and new matches.
+
+🔹 2. Resume Upload and Parsing
+
+* Upload resumes in PDF or DOCX formats.
+* The system parses the resume automatically to extract:
+  * Name, email, and contact details
+  * Education and GPA
+  * Technical and soft skills
+  * Experience, projects, and achievements
+* Parsed data is stored in the database for faster search and matching.
+
+🔹 3. Skill-Based Job Matching
+* Uses a matching algorithm that compares student skills and qualifications with job requirements.
+* Generates a match percentage or ranking score to help users identify best-fit opportunities.
+* Recruiters can view top candidates instantly based on compatibility score.
+
+🔹 4. Two-Way Interest Matching (Like Bumble)
+* Both students and recruiters can express interest in each other’s profiles or postings.
+* A connection is created only if both sides show mutual interest, ensuring quality and consent-based engagement.
+* Once matched, chat and communication features are enabled automatically.
+
+🔹 5. Internship & Job Management
+* Recruiters can post, edit, and manage job listings with detailed criteria such as skills, CGPA, duration, and stipend.
+* Students can apply, bookmark, and track their application status.
+* Built-in filters allow users to search by category, company, duration, or location
+
+🔹 6. Resume Rating and Feedback
+🔹 7. Real-Time Messaging System
+
+
+🔹 8. Application Tracking System
+* Students can monitor their application progress: Applied → Under Review → Shortlisted → Rejected → Hired.
+* Recruiters can manage applications from one dashboard and update statuses easily.
+
+ 🔹 9. Analytics and Insights
+🔹 10. Role-Based Access Control
+🔹 11. Secure Authentication & Data Protection
+🔹 12. Career Development Tools
+
+🔹 13. Admin Control Panel
+* Manage users, job postings, reports, and feedback.
+* Approve or deactivate accounts and monitor system health.
+* Export data and generate insights for institutional review.
+
+🔹 14. Notification & Alerts System
+🔹 15. Scalable and Modular Architecture
