@@ -6,29 +6,29 @@ A Modern Platform Combining Features of LinkedIn & Bumble Bizz — Tailored for 
 The Smart Career & Internship Management System is a PHP + MySQL-based web application that connects students, recruiters, and companies through a unified career hub.  
 It merges the professional networking features of LinkedIn with the matchmaking and recommendation style of Bumble, focusing exclusively on internships, student jobs, and career development.
 
-The platform simplifies the internship and recruitment process by automating **resume analysis**, **skill-based job matching**, and **recruiter shortlisting** — empowering both students and employers to connect efficiently.
+The platform simplifies the internship and recruitment process by automating Resume analysis, skill-based job matching, and recruiter shortlisting — empowering both students and employers to connect efficiently.
 
 🚀 Key Features
 
 🧑‍🎓 Student Portal
 - Create and customize career profiles with personal details, skills, projects, and experiences.  
-- Upload **resumes (PDF/DOCX)** and maintain multiple versions.  
-- View and apply to **internship/job postings** based on eligibility and skills.  
-- Track **application status** and recruiter feedback in real-time.  
+- Upload resumes (PDF/DOCX) and maintain multiple versions.  
+- View and apply to internship/job postings based on eligibility and skills.  
+- Track application status and recruiter feedback in real-time.  
 
 🏢 Company & Recruiter Dashboard
-- Post new **job/internship openings** with detailed requirements (skills, CGPA, batch).  
-- Manage **recruiter accounts** under a company.  
-- View and search **student resumes** filtered by skills or academic performance.  
-- **Rate, review, and shortlist** candidates directly.
+- Post new Job/internship openings with detailed requirements (skills, CGPA, batch).  
+- Manage recruiter accounts under a company.  
+- View and search student resumes filtered by skills or academic performance.  
+- **Rate, review, and shortlist candidates directly.
 
 🤖 Smart Matching & Analytics
-- Intelligent **skill-to-job mapping** that automatically recommends top matches.  
-- Resume parsing and **metadata extraction** for quick filtering.  
+- Intelligent skill-to-job mapping that automatically recommends top matches.  
+- Resume parsing and metadata extraction for quick filtering.  
 - Recruiter review analytics (rating averages, shortlist stats, feedback summaries).  
 
 🔐 Authentication & Access Control
-- Secure **login system** for Students, Recruiters, and Companies.  
+- Secure login system for Students, Recruiters, and Companies.  
 - Role-based access and dashboard functionality.  
 - Data privacy ensured with encrypted file handling.  
 
