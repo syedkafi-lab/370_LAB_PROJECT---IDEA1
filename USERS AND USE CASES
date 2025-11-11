@@ -1,0 +1,62 @@
+👥 System Users (Actors)
+1️⃣ Student
+Primary user — creates a profile, uploads resumes, applies for jobs/internships, and tracks progress.
+
+2️⃣ Recruiter
+Works under a company account — posts openings, reviews resumes, rates and shortlists candidates.
+
+3️⃣ Company
+Manages recruiters and job postings; acts as the parent entity of recruiters.
+
+4️⃣ Administrator (System Admin)
+Oversees the entire system — user management, database monitoring, and report generation.
+
+🎯 Use Cases by Users --->
+
+🧑‍🎓 STUDENT USE CASES
+No.	-> Use Case -> 	Description
+S1	-> Register / Login / Logout -> Sign up, authenticate, and manage sessions securely.
+S2	-> Create & Edit Profile -> Add personal, academic, and contact information.
+S3	-> Upload Resume -> Upload and manage resume files (PDF/DOCX).
+S4	-> Manage Skills -> Add, edit, or remove skill tags (linked to database).
+S5	-> Add Projects -> 	Showcase academic or personal projects.
+S6	-> Search & View Job Postings	-> Explore openings posted by companies.
+S7	-> Apply for Internship/Job ->	Submit applications directly through the portal.
+S8	-> Track Application Status ->	View accepted, rejected, or pending applications.
+S9	-> View Recruiter Feedback	-> Read comments or ratings left by recruiters.
+S10	-> Edit Account Settings	-> Manage email, password, or visibility options.
+
+🧑‍💼 RECRUITER USE CASES
+No.	-> Use Case	-> Description
+R1	-> Login to Dashboard	-> Authenticate and access company recruiter dashboard.
+R2	-> Post New Job/Internship	-> Create openings with skill, CGPA, and year filters.
+R3	-> View Applicants	-> Access student applications for their job postings.
+R4	-> Search Resumes	-> Use filters to find students by skill, CGPA, or project.
+R5	-> Review & Rate Resumes	-> Assign ratings (1–5) and feedback for each candidate.
+R6	-> Shortlist / Reject Candidates	-> Mark candidates as shortlisted or rejected.
+R7	-> Edit or Close Job Postings	-> Manage status of posted openings.
+R8	-> View Analytics Dashboard	-> See stats on applications, ratings, and hiring.
+
+🏢 COMPANY USE CASES
+No.	-> Use Case ->	Description
+C1	-> Create Company Profile	-> Add name, industry, and location details.
+C2	-> Add / Manage Recruiters	-> Invite or remove recruiter accounts under the company.
+C3	-> View Active Job Listings -> Monitor all job postings created by recruiters.
+C4	-> Track Hiring Analytics	-> View reports on applications, matches, and recruiter activity.
+
+🛠️ ADMINISTRATOR USE CASES
+No.	-> Use Case	-> Description
+A1	-> Login to Admin Panel	-> Access admin tools and system overview.
+A2	-> Manage Users	-> Approve, suspend, or delete student/recruiter/company accounts.
+A3	-> Monitor Database Activity -> Track job postings, applications, and feedback logs.
+A4	-> Generate Reports	-> Create summaries of user activity, hiring trends, and system stats.
+A5	-> Maintain Data Integrity	-> Handle data cleanup and backups.
+A6	-> System Configuration	-> Update settings, permissions, and global notifications.
+
+🕹️ System-Wide Functional Use Cases (Shared)
+Code ->	Use Case -> Used By
+U1	-> Authentication & Authorization -> Student, Recruiter, Admin
+U2	-> Profile Management	-> Student, Recruiter, Company
+U3	-> Notification System	-> Student, Recruiter
+U4	-> Search & Filter	-> Recruiter, Student
+U5	-> Analytics & Reports	-> Recruiter, Company, Admin
