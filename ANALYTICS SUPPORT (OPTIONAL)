@@ -1,0 +1,6 @@
+CREATE TABLE system_metrics (
+    metric_id INT AUTO_INCREMENT PRIMARY KEY,
+    metric_name VARCHAR(100),
+    metric_value INT,
+    recorded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
