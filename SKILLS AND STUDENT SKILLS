@@ -1,0 +1,15 @@
+CREATE TABLE skills (
+    skill_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) UNIQUE
+);
+
+CREATE TABLE student_skills (
+    student_id INT,
+    skill_id INT,
+    proficiency_level ENUM('beginner','intermediate','expert'),
+    PRIMARY KEY (student_id, skill_id),
+    FOREIGN KEY (student_id) REFERENCES students(student_id)
+        ON DELETE CASCADE,
+    FOREIGN KEY (skill_id) REFERENCES skills(skill_id)
+        ON DELETE CASCADE
+);
