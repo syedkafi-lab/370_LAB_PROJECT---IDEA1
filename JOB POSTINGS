@@ -1,0 +1,20 @@
+CREATE TABLE job_postings (
+    job_id INT AUTO_INCREMENT PRIMARY KEY,
+    company_id INT,
+    recruiter_id INT,
+    title VARCHAR(255),
+    description TEXT,
+    job_type ENUM('internship','full-time','part-time','contract'),
+    location VARCHAR(100),
+    salary_min DECIMAL(10,2),
+    salary_max DECIMAL(10,2),
+    requirements TEXT,
+    benefits TEXT,
+    status ENUM('open','closed','paused') DEFAULT 'open',
+    views_count INT DEFAULT 0,
+    posted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    deadline DATE,
+    FOREIGN KEY (company_id) REFERENCES companies(company_id),
+    FOREIGN KEY (recruiter_id) REFERENCES recruiters(recruiter_id)
+);
+
