@@ -1,0 +1,15 @@
+CREATE TABLE companies (
+    company_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    industry VARCHAR(100),
+    description TEXT,
+    website_url VARCHAR(255),
+    logo_url VARCHAR(255),
+    location VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+ALTER TABLE recruiters
+ADD CONSTRAINT fk_recruiter_company
+FOREIGN KEY (company_id) REFERENCES companies(company_id);
