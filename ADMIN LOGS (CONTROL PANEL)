@@ -1,0 +1,9 @@
+CREATE TABLE admin_logs (
+    log_id INT AUTO_INCREMENT PRIMARY KEY,
+    admin_id INT,
+    action VARCHAR(255),
+    details TEXT,
+    ip_address VARCHAR(45),
+    performed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (admin_id) REFERENCES users(user_id)
+);
