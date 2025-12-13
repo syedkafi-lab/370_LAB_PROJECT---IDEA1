@@ -1,0 +1,13 @@
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    university VARCHAR(255),
+    major VARCHAR(255),
+    gpa DECIMAL(3,2),
+    graduation_year YEAR,
+    bio TEXT,
+    profile_picture_url VARCHAR(255),
+    linkedin_url VARCHAR(255),
+    current_resume_id INT,
+    FOREIGN KEY (student_id) REFERENCES users(user_id)
+        ON DELETE CASCADE
+);
