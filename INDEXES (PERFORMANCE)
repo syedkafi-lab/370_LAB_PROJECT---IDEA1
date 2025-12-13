@@ -1,0 +1,4 @@
+CREATE INDEX idx_user_role ON users(role);
+CREATE INDEX idx_job_status ON job_postings(status);
+CREATE INDEX idx_application_status ON applications(status);
+CREATE INDEX idx_match_score ON job_recommendations(match_score);
