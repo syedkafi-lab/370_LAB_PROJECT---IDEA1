@@ -1,0 +1,12 @@
+CREATE TABLE resume_reviews (
+    review_id INT AUTO_INCREMENT PRIMARY KEY,
+    resume_id INT,
+    recruiter_id INT,
+    rating INT CHECK (rating BETWEEN 1 AND 5),
+    strengths TEXT,
+    improvements TEXT,
+    private_notes TEXT,
+    reviewed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (resume_id) REFERENCES resumes(resume_id),
+    FOREIGN KEY (recruiter_id) REFERENCES recruiters(recruiter_id)
+);
